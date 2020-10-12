@@ -33,9 +33,8 @@ the class `InvertedIndex`(src/main/python/edu/arizona/cs/invertedindex.py). Thes
 
 Also, you **should not edit** these files:
 - `.travis.yml`
-- `src/main/resources/Docs.txt`
-- `src/main/python/edu/arizona/cs/document.py`
-- `src/test/python/edu/arizona/cs/test_hw2_q7.py`
+- `src/main/resources/input.txt`
+- `src/test/python/edu/arizona/cs/test_*.py`
 
 **Note: The file `src/main/resources/Docs.txt` is the input file you must use as per hw1 guidelines. Please don't edit it or move it.**
 
@@ -95,4 +94,6 @@ Assignments that pass all, and with the corresponding code implementing the corr
 possible points.
 
 To get the remaining of the points, your code will be checked for things like readability and code quality.
+
+This time there will be a penalty for not following all submission instructions.
 
