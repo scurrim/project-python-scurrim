@@ -18,8 +18,8 @@ class QueryEngine:
         #doc = document.Document()
         ans=[]
         # first argument must be of type document.Document()
-        ans1 = Document("Doc1",1.30)
-        ans2 = Document("Doc2",1.24)
+        ans1 = Document("Doc1",1.10)
+        ans2 = Document("Doc1",1.14)
         ans.append(ans1)
         ans.append(ans2)
         return ans
@@ -31,7 +31,7 @@ class QueryEngine:
         #doc = document.Document()
         ans=[]
         # first argument must be of type document.Document()
-        ans1 = Document("Doc1",1.30)
+        ans1 = Document("Doc2",1.30)
         ans2 = Document("Doc2",1.24)
         ans.append(ans1)
         ans.append(ans2)
@@ -43,7 +43,10 @@ class QueryEngine:
         # The Document class we provided is just a dummy wrapper over Lucene document.
         # the document you use must be the Lucene document i.e
         #doc = document.Document()
-        ans=[]
+        ans = []
+        # first argument must be of type document.Document()
+        ans1 = Document("Doc2", 1.30)
+        ans.append(ans1)
         return ans
 
     def q1_2_c(self, query):
@@ -53,7 +56,7 @@ class QueryEngine:
         # doc = document.Document()
         ans = []
         # first argument must be of type document.Document()
-        ans1 = Document("Doc1", 1.30)
+        ans1 = Document("Doc2", 1.30)
         ans.append(ans1)
         return ans
 
@@ -64,7 +67,7 @@ class QueryEngine:
         # doc = document.Document()
         ans = []
         # first argument must be of type document.Document()
-        ans1 = Document("Doc1", 1.30)
+        ans1 = Document("Doc3", 1.30)
         ans2 = Document("Doc2", 1.24)
         ans.append(ans1)
         ans.append(ans2)
