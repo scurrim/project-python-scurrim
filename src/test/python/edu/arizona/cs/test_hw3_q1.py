@@ -1,11 +1,13 @@
 from unittest import TestCase
 from src.main.python.edu.arizona.cs.query_engine import QueryEngine
-from src.main.python.edu.arizona.cs.document import Document
+# from src.main.python.edu.arizona.cs.document import Document
+
 
 class Test_hw2_q7(TestCase):
     input_path= "src/main/resources/input.txt"
 
     def test_q7_1_1(self):
+        print("In 7-1-1")
         query = ["information", "retrieval"]
         ans_q1_1=QueryEngine(self.input_path).q1_1(query)
         assert type(ans_q1_1) is not None
@@ -20,8 +22,8 @@ class Test_hw2_q7(TestCase):
             assert doc_names_q1[counter]== docs.doc_id
             counter = counter + 1
 
-
     def test_q7_1_2_a(self):
+        print("In 7-1-2a")
         query = ["information", "retrieval"]
         ans=QueryEngine(self.input_path).q1_2_a(query)
         assert type(ans) is not None
@@ -39,6 +41,7 @@ class Test_hw2_q7(TestCase):
 
 
     def test_q7_1_2_b(self):
+        print("In 7-1-2b")
         query = ["information", "retrieval"]
         ans=QueryEngine(self.input_path).q1_2_b(query)
         assert type(ans) is not None
@@ -48,6 +51,7 @@ class Test_hw2_q7(TestCase):
 
 
     def test_q7_1_2_c(self):
+        print("In 7-1-2c")
         query = ["information", "retrieval"]
         ans=QueryEngine(self.input_path).q1_2_c(query)
         assert type(ans) is not None
@@ -64,6 +68,7 @@ class Test_hw2_q7(TestCase):
 
 
     def test_q7_1_3(self):
+        print("In 7-1-3")
         query = ["information", "retrieval"]
         ans=QueryEngine(self.input_path).q1_3(query)
         assert type(ans) is not None
