@@ -6,11 +6,13 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
   - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
-  - docker pull coady/pylucene
-  - pip install lupyne[server]
+  - docker pull azdb/lupyne:version2
+  - docker run  --env PYTHONPATH=.:/usr/src -dit --name csc483 azdb/lupyne:version2
 
 branches:
   only:
   - main
 
-script: pytest
+script: 
+  - docker cp ./ csc483:/usr/src
+  - docker exec -it csc483 pytest -p no:warnings
