@@ -6,6 +6,8 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
   - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
+  - docker pull coady/pylucene
+  - pip install lupyne[server]
 
 branches:
   only:
