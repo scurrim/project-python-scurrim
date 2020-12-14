@@ -27,5 +27,6 @@ docker exec -it csc483_proj bash
 
 To run the code, please type the following:
 ```
+cd cs483_project/
 python src/main/python/edu/arizona/cs/query_engine.py
 ```
