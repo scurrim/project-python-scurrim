@@ -372,7 +372,7 @@ class QueryEngine:
         pass
 
     def runMult_Eng(self, tfidf):
-        print("In MultEng")
+        print("Starting run with Best Index and 100 questions")
         answers = []
         count_correct_queryText = 0
         self.prec_at_1 = 0
